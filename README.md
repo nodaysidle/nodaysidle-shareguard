@@ -4,7 +4,51 @@
 
 ShareGuard gives you a last-chance leak check before you publish, send, zip, or push files. Drop in files or folders, scan locally, and review a redacted risk report for secrets, private contact details, local paths, and suspicious share targets.
 
-**macOS 14+** · Swift 6 · SwiftUI · no network calls
+**v0.1.0** · macOS 14+ · Swift 6 · SwiftUI · no network calls
+
+---
+
+## Install
+
+Download the latest release:
+
+[Download ShareGuard v0.1.0](https://github.com/nodaysidle/nodaysidle-shareguard/releases/download/v0.1.0/ShareGuard-v0.1.0-macos.zip)
+
+> ⚠️ **Verify the download**
+>
+> Always verify the SHA256 checksum of the downloaded zip before unzipping and running.
+>
+> | Asset | SHA256 |
+> |-------|--------|
+> | `ShareGuard-v0.1.0-macos.zip` | `a14e01aa0aa077173d447abe8f2492507d5660e38c881daf0bad86d4d3038088` |
+>
+> ```bash
+> shasum -a 256 ShareGuard-v0.1.0-macos.zip
+> ```
+>
+> The output must match the checksum above exactly.
+
+1. Unzip the downloaded archive.
+2. Drag `ShareGuard.app` to `/Applications`.
+
+> **Note on signing:** ShareGuard is ad-hoc signed. macOS Gatekeeper may block it on first launch.
+> To open:
+>
+> 1. Right-click (or Control-click) `ShareGuard.app` in Finder
+> 2. Select **Open** from the context menu
+> 3. Click **Open** in the Gatekeeper dialog
+>
+> This is a one-time step. Developer ID signing and notarization are on the roadmap.
+
+---
+
+## Quick Start
+
+1. Launch ShareGuard.app.
+2. Drag files or folders onto the drop zone.
+3. Review summary cards and redacted findings before sharing the material.
+
+Full operator guide: [USERGUIDE.md](USERGUIDE.md)
 
 ---
 
@@ -34,28 +78,6 @@ ShareGuard is intentionally local-first.
 - Findings are heuristic and must be reviewed before sharing.
 
 It is a pre-share checklist, not a formal DLP guarantee.
-
----
-
-## Quick Start
-
-1. Build and package:
-
-   ```bash
-   swift test
-   ./Scripts/package_app.sh
-   ```
-
-2. Launch the packaged app:
-
-   ```bash
-   open .build/release/ShareGuard.app
-   ```
-
-3. Drag files or folders onto the drop zone.
-4. Review summary cards and redacted findings before sharing the material.
-
-Full operator guide: [USERGUIDE.md](USERGUIDE.md)
 
 ---
 
@@ -100,14 +122,15 @@ Release notes: [CHANGELOG.md](CHANGELOG.md)
 | `Scripts/` | Packaging scripts |
 | `USERGUIDE.md` | End-user operation guide |
 | `CHANGELOG.md` | Release-facing changes |
-| `docs/internal/` | Planning/spec/agent notes retained for maintainers |
 
 ---
 
 ## Status
 
-ShareGuard is an early internal NODAYSIDLE macOS utility. Current builds are ad-hoc signed for local/internal use; public distribution should add Developer ID signing and notarization first.
+ShareGuard v0.1.0 is a public pre-share privacy scanner for macOS, actively developed by NODAYSIDLE. The current release is ad-hoc signed; Developer ID signing and notarization are planned for a future release.
+
+See [CHANGELOG.md](CHANGELOG.md) for release history and known limitations.
 
 ## License
 
-Proprietary — NODAYSIDLE.
+[Proprietary](LICENSE) — Copyright © 2026 NODAYSIDLE. All rights reserved.

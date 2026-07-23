@@ -1,3 +1,5 @@
+<img src=".github/social-preview.png" alt="NODAYSIDLE ShareGuard — NODAYSIDLE" width="100%">
+
 # NODAYSIDLE ShareGuard
 
 > Local-first macOS pre-share privacy scanner.

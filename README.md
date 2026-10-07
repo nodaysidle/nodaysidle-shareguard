@@ -1,6 +1,6 @@
-<img src=".github/social-preview.png" alt="NODAYSIDLE ShareGuard — NODAYSIDLE" width="100%">
-
 # NODAYSIDLE ShareGuard
+
+![ShareGuard: last-chance leak check before you share](docs/shareguard.gif)
 
 > Local-first macOS pre-share privacy scanner.
 

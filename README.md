@@ -51,19 +51,21 @@ ShareGuard is intentionally local-first:
 
 ## Installation
 
-Download from [GitHub Releases](https://github.com/nodaysidle/nodaysidle-shareguard/releases/download/v0.1.0/ShareGuard-v0.1.0-macos.zip).
+Download the latest Apple Silicon DMG from [GitHub Releases](https://github.com/nodaysidle/nodaysidle-shareguard/releases/download/v0.1.0-dmg.20260727/ShareGuard-0.1.0.dmg) ([SHA-256 checksum](https://github.com/nodaysidle/nodaysidle-shareguard/releases/download/v0.1.0-dmg.20260727/ShareGuard-0.1.0.dmg.sha256)).
 
 Verify the download:
 
 | Asset | SHA256 |
 |-------|--------|
-| `ShareGuard-v0.1.0-macos.zip` | `a14e01aa0aa077173d447abe8f2492507d5660e38c881daf0bad86d4d3038088` |
+| `ShareGuard-0.1.0.dmg` | `590bd3e066ecd30fa998c38755647264affb571680de6b494055b620a84ce8fd` |
 
 ```bash
-shasum -a 256 ShareGuard-v0.1.0-macos.zip
+shasum -a 256 ShareGuard-0.1.0.dmg
 ```
 
-Unzip and drag `ShareGuard.app` to `/Applications`. The app is ad-hoc signed. On first launch, right-click the app in Finder → **Open**. Developer ID signing and notarization are planned.
+Open the DMG and drag `ShareGuard.app` to `/Applications`. The app is ad-hoc signed (not Developer ID signed or notarized). On first launch, right-click the app in Finder → **Open**, or allow it in System Settings → Privacy & Security. Developer ID signing and notarization are planned.
+
+The older [v0.1.0 ZIP](https://github.com/nodaysidle/nodaysidle-shareguard/releases/tag/v0.1.0) remains available as a fallback.
 
 ## Usage
 
